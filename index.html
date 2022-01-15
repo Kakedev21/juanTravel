@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <title>Document</title>
+</head>
+<body>
+  <div id="hero">
+    <nav>
+      <h1 class="logo">Juan Travel</h1>
+      <div class="nav-links">
+        <ul>
+          <Li><a href="#hero">Home</a></Li>
+          <Li><a href="#about-us">About Us</a></Li>
+          <Li><a href="#gallery-page">Gallery</a></Li>
+          <Li><a href="#boking-page">Book Now</a></Li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="info">
+        <h1>Feel the warm breeze</h1>
+        <p>Juan Travel is a booking company that create and bring the best and memorable experience in your vacation. hassle free!</p>
+        <button class="btn"><a href="#gallery-page">Explore now</a></button>
+      </div>
+    </div>
+    <div class="slider">
+      <i class="fas fa-arrow-circle-left" id="prev"></i>
+      <div class="preview">
+        <img src="images/small2.jpg" alt="" class="active thumbnail">
+        <img src="images/small1.jpg" alt="" class="thumbnail">
+        <img src="images/small4.jpg" alt="" class="thumbnail">
+      </div>
+      <i class="fas fa-arrow-circle-right" id="next"></i>
+    </div>
+  </div>
+  <div class="gallery-page" id="gallery-page">
+    <h1>Take a Tour!</h1>
+    <div class="img-gallery">
+      <img src="images/img1.jpg" onclick="openFullImg(this.src)">
+      <img src="images/img2.jpg" onclick="openFullImg(this.src)">
+      <img src="images/img3.jpg" onclick="openFullImg(this.src)">
+      <img src="images/img4.jpg" onclick="openFullImg(this.src)">
+      <img src="images/img5.jpg" onclick="openFullImg(this.src)">
+      <img src="images/img6.jpg" onclick="openFullImg(this.src)">
+      <img src="images/img7.jpg" onclick="openFullImg(this.src)">
+      <img src="images/img8.jpg" onclick="openFullImg(this.src)">
+    </div>
+    <div class="full-img" id="fullImgbox">
+      <img src="images/img1.jpg" id="fullImg">
+      <span onclick="closeFullImg()">X</span>
+    </div>
+  </div>
+  <div class="about-us" id="about-us">
+    <div class="content-section">
+      <div class="title">
+        <h4>About Us</h4>
+      </div>
+      <div class="content">
+        <h3>Founded in 2022 in Philippines, Juan Travel was design to fulfil your desired in terms of traveling in Boracay without
+        hassle.
+          </h1>
+          <p> Part of Juan travel is the local companies or cuisine that you may want to explore and build up memories and
+          activities that Juan travel wants to achieve.
+          By investing in the technology that helps minimized the delay of booking. Juan travel will be connected to millions of
+          travelers with memorable experiences , a good service option and incredible places to stay from known hotels to local
+          residents and much more.</p>
+      </div>
+      <div class="social">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+    </div>
+    <div class="image">
+      <img src="images/blogo.png" alt="">
+    </div>
+  </div>
+  <div class="location">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31224.598219963376!2d121.90971945140952!3d11.969324589847915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c2f324b4ee7%3A0xa738e81e5e6dda36!2sBoracay!5e0!3m2!1sen!2sph!4v1639149375677!5m2!1sen!2sph"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  <div class="boking-page" id="boking-page">
+    <div class="contact-us">
+      <h1>Book Now!</h1>
+      <div class="row">
+        <div class="contact-col">
+          <form action="form-handler.php" method="POST">
+            <input type="text" name="name" placeholder="Enter name" required>
+            <input type="email" name="email" placeholder="Enter email" required>
+            <input type="number" name="number" placeholder="Enter Contact No." required>
+            <label for="date">Departing</label>
+            <input type="date" name="date" placeholder="Departing">
+            <label for="date2">Returning</label>
+            <input type="date" name="date2" placeholder="returning">
+            <input type="number" placeholder="Adult"> <input type="number" placeholder="children">
+            <button type="submit" class="btn red-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="testimonials">
+    <h1>Testimonials</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+      <div class="col-4">
+        <img src="images/user1.jpg" alt="">
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sint dolor iusto quas similique quaerat
+            voluptas, ex exercitationem nam ducimus commodi architecto, tenetur quis suscipit possimus accusamus, sunt
+            sequi odio.</p>
+          <h3>Jane Doe</h3>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
+      <div class="col-4">
+        <img src="images/user2.jpg" alt="">
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sint dolor iusto quas similique quaerat
+            voluptas, ex exercitationem nam ducimus commodi architecto, tenetur quis suscipit possimus accusamus, sunt
+            sequi odio.</p>
+          <h3>John Doe</h3>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
+      <div class="col-4">
+        <img src="images/user3.jpg" alt="">
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sint dolor iusto quas similique quaerat
+            voluptas, ex exercitationem nam ducimus commodi architecto, tenetur quis suscipit possimus accusamus, sunt
+            sequi odio.</p>
+          <h3>John Doe</h3>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-sec">
+<div class="footer-container">
+  <div class="footer-row">
+    <div class="footer-col">
+      <h4>Juan Travel</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Booking</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">JjJ Web Developers</a></li>
+        <li><a href="#">Juan Travel Company</a></li>
+        <li><a href="#">Los baños laguna</a></li>
+        <li><a href="#">Philippines</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul>
+        <li><a href="#">(+63) 8489484</a></li>
+        <li><a href="#">049(5555555)</a></li>
+        <li><a href="#">juantravel@gmail.com</a></li>
+        <li><a href="#">facebook.com/juanTravel</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>follow</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
